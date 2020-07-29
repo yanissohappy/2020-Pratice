@@ -22,11 +22,7 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 * 原本我以為python跟C一樣都是'1'-48就可以直接轉成1了
 * 但是C和python的特性截然不同，所以要使用chr和ord幫助撰寫(也許有其他方法?待思考)
 
-* 在這次的程式碼中還有使用到
-
-    [::-1]
-	
-這個東西，這是slicing的倒序應用
+* 在這次的程式碼中還有使用到[::-1]這個東西，這是slicing的倒序應用
 * 因為我要使用string reverse()時發現不能這樣用（只有list可以）
 * 所以用slice是最快的(而且list也可以使用！)
 * 使用時要小心的是[::-1]前面不須放點，直接黏著便是
