@@ -23,7 +23,8 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 但是C和python的特性截然不同，所以要使用chr和ord幫助撰寫(也許有其他方法?待思考)
 
 在這次的程式碼中還有使用到
-	[::-1]
+
+    [::-1]
 	
 這個東西，這是slicing的倒序應用
 因為我要使用string reverse()時發現不能這樣用（只有list可以）
