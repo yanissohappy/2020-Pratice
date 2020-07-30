@@ -17,7 +17,6 @@ class Solution(object):
             list_dic.append(dic)
         
         rev = []
-        list_num = 0
         
         for i in range(len(list_dic)):
             j = 0
