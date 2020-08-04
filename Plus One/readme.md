@@ -18,6 +18,7 @@ You may assume the integer does not contain any leading zero, except the number 
 ## 我的心得:
 * 從 list pop 出值
 * pop 都是從最後一個出來的，正好可以直接乘上 weight (權值)
+* (p.s pop(0) 可以得到跟 del list[0] 相同的效果)
 * 每個 pass 權值都會更新成原來10倍，也會將乘上 weight 的某個 digit 加進 sum 裡
 * 最後將 sum + 1
 * 再利用除法及餘數，將 sum + 1 一一插入要 return 的 list 裡(從最前面放)
