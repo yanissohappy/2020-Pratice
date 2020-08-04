@@ -22,3 +22,9 @@ You may assume the integer does not contain any leading zero, except the number 
 * 每個 pass 權值都會更新成原來10倍，也會將乘上 weight 的某個 digit 加進 sum 裡
 * 最後將 sum + 1
 * 再利用除法及餘數，將 sum + 1 一一插入要 return 的 list 裡(從最前面放)
+-----------
+* 我還有想到另一個方法，利用 python 的 API:
+* 直接將 list 用 list(map(str,digits)) 將全部的 int 轉為 char
+* 再用 ''.join(list)轉為string
+* string 再轉為 int，並且+1
+* 最後再轉回 list 即可
