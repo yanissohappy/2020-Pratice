@@ -33,3 +33,9 @@ To represent a cycle in the given linked list, we use an integer pos which repre
 * 若有 head，但卻沒有 head 的下一個，即表示一開始就沒有接續了，return False
 * 接著就是 iterate 所有 nodes，走過的值都標示成 "HaSeXiStEd" ( has existed )
 * 如果一直走著走著發現遇到了 "HaSeXiStEd"，即表示有環，return True
+
+--------------
+
+* main2.py 是 slow and fast pointer的實作法
+* 須小心不要 iterate 到 None 的部分，只需判斷 fast pointer 即可，因為 fast pointer 走最快
+* 若中途走到的 node 是相同( id )的話，則代表有環(因為永遠繞不出去)
