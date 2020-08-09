@@ -20,4 +20,8 @@ Given a non-negative integer numRows, generate the first numRows of Pascal's tri
 ## [原題目連結點我](https://leetcode.com/problems/pascals-triangle/)
 	
 ## 我的心得:
-* 不斷地 iteration 即可。
+* 不斷地 iteration 即可
+
+---------------
+
+* 法二：利用 left shift 和 right shift，再各自相加，即可不斷得到下一排
