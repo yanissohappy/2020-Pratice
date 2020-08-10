@@ -16,8 +16,7 @@ Given a string s, partition s such that every substring of the partition is a pa
 ## 我的心得:
 * 思路如下：
 
-![avatar](./image0.jpeg =250x)
-<img src="./image0.jpeg" data-canonical-src="./image0.jpeg" width="50%" height="50%" />
+<img src="./image0.jpeg" data-canonical-src="./image0.jpeg" width="80%" height="80%" />
 
 ----
 
