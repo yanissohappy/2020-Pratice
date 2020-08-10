@@ -8,7 +8,7 @@ Given a binary tree containing digits from 0-9 only, each root-to-leaf path coul
 
 ## Example:
 
-* Input: [1,2,3]
+* Input: [1,2,3]  
 　　　1  
 　　/　 \  
 　2　　　3  
@@ -19,7 +19,7 @@ The root-to-leaf path 1->3 represents the number 13.
 Therefore, sum = 12 + 13 = 25.  
 ## Example 2:
 
-* Input: [4,9,0,5,1]
+* Input: [4,9,0,5,1]  
 　　　　4  
 　　　/　　\  
 　　9　　　　0  
