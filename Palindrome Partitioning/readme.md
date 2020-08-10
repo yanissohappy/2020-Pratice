@@ -28,10 +28,10 @@ Given a string s, partition s such that every substring of the partition is a pa
 * 實際做實驗發現:  
 	![avatar](./image1.jpeg)  
 	每次使用 s 的 address 都是相同的  
-	而使用 s[:] 每次都會不相同，原因是它只是個 copy
+	而使用 s[:] 每次都會不相同，原因是它只是個 copy  
 * 而使用 copy 可以確定一 recursive 的結果不會隨著外部變動而改變
 * 簡言之，可以把 main1.py 中所寫的 a_list 當成只有一份，所以 a_list 在改動的時候，連帶也會影響已經 append 入 ret 的值
-* 於是我又再做了這個實驗:
+* 於是我又再做了這個實驗:  
 	![avatar](./image2.jpeg)  
 	發現 append 進去的確實會因為原來的東西改變而使得被塞入的也一起改變，仔細觀察實驗結果，b 及 a[4] 的 address 都是相同的  
 
