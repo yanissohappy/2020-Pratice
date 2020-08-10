@@ -16,7 +16,7 @@ Given a string s, partition s such that every substring of the partition is a pa
 ## 我的心得:
 * 思路如下：
 
-![avatar](./image0.jpeg)
+![avatar](./image0.jpeg =250x)
 
 ----
 
