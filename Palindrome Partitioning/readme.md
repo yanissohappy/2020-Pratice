@@ -24,7 +24,7 @@ Given a string s, partition s such that every substring of the partition is a pa
 * 終於發現問題所在，也學習到 [:] 的意涵
 * 在 return a_list 後面加上 [:] 是非常必要的事情(詳見上面的圖片)
 * 此為 pass by reference 和 pass by value 的 issue
-* slicing 詳細用法請見此![連接](https://stackoverflow.com/questions/509211/understanding-slice-notation)  
+* slicing 詳細用法請見此[連接](https://stackoverflow.com/questions/509211/understanding-slice-notation)  
 * 實際做實驗發現:  
 	![avatar](./image1.jpeg)  
 	每次使用 s 的 address 都是相同的  
