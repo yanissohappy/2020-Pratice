@@ -20,7 +20,7 @@ A message containing letters from A-Z is being encoded to numbers using the foll
 ## [原題目連結點我](https://leetcode.com/problems/decode-ways/)
 	
 ## 我的心得:
-* TLE1.py 和 TLE2.py 都是答案對的，只是答案過長的話就會 Time Limit Exceeded
+* TLE1.py 和 TLE2.py 答案都是對的，只是測資過長的話就會 Time Limit Exceeded
 ------
 
 * main.py
