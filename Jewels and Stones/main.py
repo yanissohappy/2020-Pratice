@@ -1,10 +1,9 @@
 class Solution(object):
-    def numIdenticalPairs(self, nums):
+    def numJewelsInStones(self, J, S):
+        jewel_type = set(list(J))
         count = 0
-        for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] == nums[j]:
-                    count += 1
+        for stone in list(S):
+            if stone in jewel_type:
+                count += 1
         return count
-            
         
