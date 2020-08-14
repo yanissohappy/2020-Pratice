@@ -19,5 +19,5 @@ Write a function that takes a string as input and reverse only the vowels of a s
 ----
 
 * main1.py
-* 在得到母音字元同時也紀錄該位置，最後再利用該位置 pop 出來，但此種方法須搭配 list 使用
+* 在得到母音字元同時也紀錄該位置，最後在該位置用先存好的母音 list pop 出來覆蓋掉( pop default 從最後一個)，但此種方法須搭配 list 使用
 * 利用空間換時間，這樣效能就大幅躍進了
