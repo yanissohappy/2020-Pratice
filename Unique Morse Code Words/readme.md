@@ -30,3 +30,10 @@ The transformation of each word is:
 ## 我的心得:
 * 利用 ord 去取得 ASCII，以便計算在 alphabet 對應的位置
 * 再利用 set 不重複特性來計算 distinct 個體數即可
+------
+* 在討論區我看到有人使用 zip 以及 string.ascii_lowercase (即列出 'abcdefghijklmnopqrstuvwxyz' )，覺得很巧妙，特此紀錄
+
+		morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+		import string
+		morsedict = dict(zip(string.ascii_lowercase,morse))
+* 然後再利用 key value 輸出即可
