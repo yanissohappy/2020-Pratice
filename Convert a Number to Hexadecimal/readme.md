@@ -31,10 +31,9 @@ Given an integer, write an algorithm to convert it to hexadecimal. For negative 
 
 * 我在討論區看到一個很聰明的方法，特此紀錄:
 
-		''.join(	
-					'0123456789abcdef'[(num >> 4 * i) & 15] 
-					for i in range(8)
-					)[::-1].lstrip('0') or '0'
+		''.join('0123456789abcdef'[(num >> 4 * i) & 15] 
+			for i in range(8)
+			)[::-1].lstrip('0') or '0'
 
 * 該法即為不斷從 '0123456789abcdef' 選出相對應的位置(所以就不用像我一樣寫函式)
 * "& 15" 即為 %16 之意!!!(我覺得很巧妙!! 此人很精通 bit 操作!) 
