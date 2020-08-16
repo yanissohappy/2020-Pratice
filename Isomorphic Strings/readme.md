@@ -23,5 +23,7 @@ Given two strings s and t, determine if they are isomorphic.
 	
 ## 我的心得:
 * main.py
-* 這個在 s = "ab" , t = "aa" 的測資時會錯
-* 太累了先 commit，睡醒改 
+* 要小心 s = "ab" , t = "aa" 的測資
+* 所以在檢查的時候要雙向都要檢查，s -> t 以及 t -> s
+* 以上述測資為例，a 對應 a，b 又對應 a，這樣變成多對一，是不可以的
+* a 對應 b，b 又對應 a 是可以的，因為本質上就是一對一
