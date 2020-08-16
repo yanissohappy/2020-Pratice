@@ -53,3 +53,4 @@ The index list mapping looks like,
 
 After you pick a, and b, c will be picked, and index is 3.    
 Now if you have to pick d, you can't pick index 2 because c was picked at 3, so you have to binary search for index which comes after 3. So it returns 5.
+* 不過其實我原先的寫法效能似乎比這個還好，只是此法會使用到 dict 和 bisect_left，特此紀錄
