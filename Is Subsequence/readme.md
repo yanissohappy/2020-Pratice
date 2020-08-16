@@ -26,7 +26,7 @@ Given a string s and a string t, check if s is subsequence of t.
 * 0 <= t.length <= 10^4
 * Both strings consists only of lowercase characters.
 
-## [原題目連結點我](https://leetcode.com/problems/is-subsequence/
+## [原題目連結點我](https://leetcode.com/problems/is-subsequence/)
 	
 ## 我的心得:
 * 利用 find，每次都用 s[0] 找到 t 剩下片段的第一個 index，若 index 為 -1 ，則代表找不到
