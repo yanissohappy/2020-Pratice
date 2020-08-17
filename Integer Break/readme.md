@@ -22,7 +22,7 @@ Given a positive integer n, break it into the sum of at least two positive integ
 <img src="./image0.jpeg" width = "30%" height = "30%"/>
 
 * 參考上圖，要注意的是 dp (對應 index )裡面放的值，以 4 拆解為例:
-要做 4 的時候 dp 應為 [0,0,1,2] ( index 記錄到 3 )
+要做 4 的時候， dp 應為 [0,0,1,2] ( index 記錄到 3 )  
 4 拆解為:  
 (1) 1 + 3   
 其值為 取最大(1 or dp[1]) * 取最大(3 or dp[3])，並且跟上一次乘積進行比較  
