@@ -18,7 +18,8 @@ Given a positive integer n, break it into the sum of at least two positive integ
 * 這題會使用到 dp，就不用重複拆解及計算
 * implement 以下思考過程:
 
-![avatar](./image0.jpeg) 
+
+<img src="./image0.jpeg" width = "50%" height = "50%"/>
 
 * 參考上圖，要注意的是 dp (對應 index )裡面放的值，以 4 拆解為例:
 要做 4 的時候 dp 應為 [0,0,1,2] ( index 記錄到 3 )
