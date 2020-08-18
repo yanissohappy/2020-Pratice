@@ -40,7 +40,7 @@ Given a positive integer n, break it into the sum of at least two positive integ
  
  ----
 
-* 我看到這個解法多了一層思考，覺得不錯，特此紀錄:  
+* 我看到[這個解法](https://leetcode.com/problems/integer-break/discuss/80785/O(log(n))-Time-solution-with-explanation)多了一層思考，覺得不錯，特此紀錄:  
 
 Given a number n lets say we have a possible product P = p1 * p2 * ... pk. Then we notice what would happen if we could break pi up into two more terms lets say one of the terms is 2 we would get the terms pi-2 and 2 so if 2(pi-2) > pi we would get a bigger product and this happens if pi > 4.  
 
