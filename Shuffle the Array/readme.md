@@ -28,4 +28,9 @@ Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,.
 ## [原題目連結點我](https://leetcode.com/problems/shuffle-the-array/)
 	
 ## 我的心得:
-* 從中間切一半然後用 zip 取 "前半的 i++" 及 "取後半 j++" iteratively 兩兩塞入即可!:D
+* 從中間切一半然後用 zip 取前辦及取後半兩兩塞入即可!:D
+
+----
+
+* main1.py
+* 不使用 sliciing，直接用個數算即可，效能上升很多
