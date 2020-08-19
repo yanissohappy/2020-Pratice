@@ -35,7 +35,7 @@ Array nums is equal to [3, 5, 7, 9] where (3 ^ 5 ^ 7 ^ 9) = 8.
 * 0 <= start <= 1000
 * n == nums.length
 
-## [原題目連結點我](https://leetcode.com/problems/lexicographical-numbers/)
+## [原題目連結點我](https://leetcode.com/problems/xor-operation-in-an-array/)
 	
 ## 我的心得:
 * 這題當然可以直接不斷用 ^= 得到結果，但是這樣就會是 O(n)
