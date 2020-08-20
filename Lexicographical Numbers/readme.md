@@ -7,6 +7,9 @@ Given an integer n, return 1 - n in lexicographical order.
 ## [原題目連結點我](https://leetcode.com/problems/lexicographical-numbers/)
 	
 ## 我的心得:
-* main.py
-* 確定是可以的做法，但是會 TLE
-* 所以我要想改進的方法
+* main.py (faster than 34.29%)
+* 確定是可以的做法，但是值超過 700000 會 TLE，但其實 commit 的話是可以 pass的
+
+-----
+* main1.py (faster than 6X%)
+* 改進的作法，同樣也是 BFS 的概念，而且因為不用不斷用 queue 存，所以速度快了一些
