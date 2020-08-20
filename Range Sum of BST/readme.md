@@ -24,7 +24,7 @@ Given the root node of a binary search tree, return the sum of values of all nod
 ## 我的心得:
 * main.py 
 * 想清楚遞迴結構就好
-* 但我覺得這題 leetcode 在 run code 給的答案會是錯的(但 commit 會是對的)
+* 但我覺得這題 leetcode 在 run code 給的答案會是錯的(測資是我自己給的，我確定這樣的測資我寫的 code 是對的，但 run code 會錯誤，而 commit 會是對的)
 * 如下圖:  
 
 ![avatar](./weird.png)
