@@ -5,6 +5,7 @@ Given the root node of a binary search tree (BST) and a value to be inserted int
 * For example,   
 
 Given the tree:  
+
 	　　　　4  
 	　　　/　\  
 	　　2　　7  
@@ -49,4 +50,4 @@ This tree is also valid:
         if not root:
             return TreeNode(val)
 ```
-* 在上面這段程式碼中兩者代表的意義不同，main.py 是從最後面開始；而 main1.py 則是避免掉空樹的狀況，所以兩者皆不可省略
+* 在上面這段程式碼中兩者代表的意義不同，main.py 是找到最後面的地方接 node；而 main1.py 則是避免掉測資可能會有 empty tree 的狀況，所以兩者皆不可省略
