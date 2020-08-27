@@ -36,5 +36,5 @@ Given the array nums, for each nums[i] find out how many numbers in the array ar
 ## 我的心得:
 * main.py
 * 先 sort 好，然後用相對應的數字找標號就好!
-* 不過此法效能不好，還是用空間換時間是比較好的方式(先建好一個 len 為 101 的 list，因為** 0 <= nums[i] <= 100 ** ，然後計算好小於某個數字的個數一一放進該 list 裡
+* 不過此法效能不好，還是用空間換時間是比較好的方式(先建好一個 len 為 101 的 list，因為**0 <= nums[i] <= 100** ，然後計算好小於某個數字的個數一一放進該 list 裡
 * 最後再 output 進 return list 即可)
