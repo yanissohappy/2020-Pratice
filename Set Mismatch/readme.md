@@ -16,3 +16,9 @@ The set S originally contains numbers from 1 to n. But unfortunately, due to the
 ## 我的心得:
 * main.py
 * 用 set 處理即可
+
+------
+
+* main1.py
+* 在 leetcode 測試發現會 TLE，但是我確定若能跑出結果會是正確的
+* 原理就是利用二分法以及 XOR 檢驗重複項會為 0 的特性
