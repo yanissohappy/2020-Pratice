@@ -31,3 +31,24 @@ We have a collection of stones, each stone has a positive integer weight.
 * 先 sort 好，就可以 pop 出兩個最大的
 * 之後再依據題意做判斷
 * 要注意的是 `x != y` 時，因為會產生新的數值放回去，就使用插入放入就好，因為相減的數通常是小的，從小的數值開始比對決定要在哪插入會有較少的 iteration
+-----
+
+* 我在討論區看到不錯的用法(是直接使用 API 的，有空我來刻演算法看看)
+```python
+import heapq
+class Solution:
+	    def lastStoneWeight(self, stones: List[int]) -> int:
+		stones = [-val for val in stones]
+		heapq.heapify(stones)
+		while len(stones) > 1:
+		    x1 = heapq.heappop(stones)
+		    x2 = heapq.heappop(stones)
+		    if x1 != x2:
+			heapq.heappush(stones,x1-x2)
+		if len(stones) == 0:
+		    return 0
+		return -stones[0]
+```
+* 在 python 這個 API 當中，是用 min heap，也就是說 parent node 會小於 child node，故樹上最小的元素永遠會在根節點 heap[0]
+* 所以 `heappop` 會"傳回 heap 中最小的元素"
+* 第二次的 `heappop` 依舊會"傳回 heap 中最小的元素"
