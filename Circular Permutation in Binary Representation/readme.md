@@ -37,6 +37,9 @@ Given 2 integers n and start. Your task is return any permutation p of (0,1,2...
 * 也有發現 0 ~ 2^n - 1 中，除了 n == 1，其他的 n 都會讓序列中全部 XOR 為 0
 * 不知道這個性質是否能應用呢?
 * 總而言之，我的作法是一開始 n == 1 時，序列為 [0,1]
-* n == 2:  [0,1,**3,2**]，後面那個`3, 2`其實是從 `2, 3`變來的，也就是說在每一個 iteration 中，要找出該 iteration 的起始，也就是這行 ```python next_start = 2 ** m ```
+* n == 2:  [0,1,**3,2**]，後面那個`3, 2`其實是從 `2, 3`變來的，也就是說在每一個 iteration 中，要找出該 iteration 的起始，也就是這行 
+```python
+next_start = 2 ** m 
+```
 * 然後原序列加上這個 next_start，之後再反轉，就可以得到下一次新的序列
 * 像是鏡子一樣，但是能不斷地反射出新的序列
