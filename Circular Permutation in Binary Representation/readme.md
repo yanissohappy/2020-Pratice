@@ -46,3 +46,30 @@ Given 2 integers n and start. Your task is return any permutation p of (0,1,2...
 ```
 * 然後原序列加上這個 next_start，之後再反轉，就可以得到下一次新的序列
 * 像是鏡子一樣，但是能不斷地反射出新的序列
+
+-----
+* 看到討論區的一個寫法真的是太厲害了，茲紀錄:
+```python
+n = 3
+for i in range(1 << n):
+    print(bin(i^(i>>1)))
+```
+* 上面的可以產生下面的序列:(即為 **gray code**)
+```python
+0b0
+0b1
+0b11
+0b10
+0b110
+0b111
+0b101
+0b100
+```
+* 那麼如果要設起點(start)，用這個想法→我們知道現在上面產生的序列，每兩兩都是差 1 個 bit，就算再多 XOR 一個 constant 也不會打破 "兩兩差 1 bit" 的這個性質
+* 比如說，`0b111`和`0b101`，同時再 XOR 2 的話，就會變成`0b101`和`0b111`，發現這樣的結果仍然是兩個彼此差 1 bit
+* 因為我們的`i^(i>>1)`的`i`是從 0 開始，而`0 ^ (0>>1)`等同於`0 ^ (0)`也等同於`0`，故一開始就給予`start^i^(i>>1)`是合理的，並且會使所有的序列從 start 作為開頭，彼此兩兩都會差 1 bit
+* 故實做 code 如下:
+```python
+	def circularPermutation(self, n, start):
+		return [start ^ i ^ i >> 1 for i in range(1 << n)]
+```
