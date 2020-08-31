@@ -16,7 +16,7 @@ Given two strings s and t , write a function to determine if t is an anagram of 
 ## Follow up:
 * What if the inputs contain unicode characters? How would you adapt your solution to such case?
 
-## [原題目連結點我](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)
+## [原題目連結點我](https://leetcode.com/problems/valid-anagram/)
 	
 ## 我的心得:
 * main.py
