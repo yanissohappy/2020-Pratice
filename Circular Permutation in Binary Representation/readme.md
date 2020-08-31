@@ -27,6 +27,9 @@ Given 2 integers n and start. Your task is return any permutation p of (0,1,2...
 	
 ## 我的心得:
 * main.py
+* 思路:
+<img src="./image0.jpeg" width="50%" height="50%">
+
 * 序列都有所規律
 	1. [0,1]
 	2. [0,1,3,2]
@@ -39,7 +42,7 @@ Given 2 integers n and start. Your task is return any permutation p of (0,1,2...
 * 總而言之，我的作法是一開始 n == 1 時，序列為 [0,1]
 * n == 2:  [0,1,**3,2**]，後面那個`3, 2`其實是從 `2, 3`變來的，也就是說在每一個 iteration 中，要找出該 iteration 的起始，也就是這行 
 ```python
-next_start = 2 ** m 
+	next_start = 2 ** m 
 ```
 * 然後原序列加上這個 next_start，之後再反轉，就可以得到下一次新的序列
 * 像是鏡子一樣，但是能不斷地反射出新的序列
