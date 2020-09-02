@@ -7,7 +7,7 @@ For a binary tree T, we can define a flip operation as follows: choose any node,
  
 
 ## Example 1:
-	![a](https://assets.leetcode.com/uploads/2018/11/29/tree_ex.png)
+![a](https://assets.leetcode.com/uploads/2018/11/29/tree_ex.png)
 	Flipped Trees Diagram
 	Input: root1 = [1,2,3,4,5,6,null,null,null,7,8], root2 = [1,3,2,null,6,4,5,null,null,null,null,8,7]
 	Output: true
