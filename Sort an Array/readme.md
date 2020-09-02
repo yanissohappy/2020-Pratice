@@ -24,5 +24,5 @@ Given an array of integers nums, sort the array in ascending order.
 * main.py
 * 使用 merge sort
 * merge sort 演算法乃用 recursive，不斷地切切切，切到只剩一個為止，然後 return 後就可以開始 merge 所 return 的東西
-* merge 的方法是都是用兩個 list 的第一個 element 來進行比較
+* merge 的方法是都是用兩個 list 的第一個 element 來進行比較，小於的話就把他抓出來，放到要 return 的 list 裡，不斷抓，直到抓完為止
 * 然後我發現如果 output 太多行數也會出錯... (Output Limit Exceeded) 所以 Debug 完也要記得把 print 刪除
