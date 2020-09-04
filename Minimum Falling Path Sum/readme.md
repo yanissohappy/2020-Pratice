@@ -37,7 +37,7 @@ Given a square array of integers A, we want the minimum sum of a falling path th
 * 因為我明明只是設 dp 的其中一個元素，但為甚麼整個 col 都改到值了?
 * 後來才知道為甚麼，[stackoverflow 的解說](https://stackoverflow.com/questions/240178/list-of-lists-changes-reflected-across-sublists-unexpectedly)
 * 在使用`[x]*3`時，等同於`[x, x, x]`，也就是說有三個 reference 指向同一個 var，故之後設值的時候會整個 col 一起改
-* 所以最好的設二為陣列的方式就是這樣:
+* 所以最好的設二維陣列的方式就是這樣:
 ```python
 	[[1]*4 for _ in range(3)]
 ```
