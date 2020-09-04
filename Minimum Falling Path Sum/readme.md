@@ -30,4 +30,14 @@ Given a square array of integers A, we want the minimum sum of a falling path th
 * 然後我偷看了一下討論區，發現要用 DP，但我還沒有點進去任何的看實際實作，明天再繼續 :-P
 -----
 * main1.py
-* **待做**
+* 因為本題其實是 greedy，每次都只看下一步最佳，然後也有子結構可以擴展成整個結構，所以可以使用 dp
+* 做到某個 row 時可以直接利用上個 row 的結果，再加上當下所在的 element，並比較哪個值最小，再 assign 給相對應的 dp 的位置
+* 如此就可以完成
+* 但我要特別說的地方是，因為我平常很喜歡用`dp = [[0] * n] * len(A[0])`這種方式設 list，殊不知跑測資的時候出現 WA，百思不得其解，把 dp 列出來看覺得長超怪
+* 因為我明明只是設 dp 的其中一個元素，但為甚麼整個 col 都改到值了?
+* 後來才知道為甚麼，[stackoverflow 的解說](https://stackoverflow.com/questions/240178/list-of-lists-changes-reflected-across-sublists-unexpectedly)
+* 在使用`[x]*3`時，等同於`[x, x, x]`，也就是說有三個 reference 指向同一個 var，故之後設值的時候會整個 col 一起改
+* 所以最好的設二為陣列的方式就是這樣:
+```python
+	[[1]*4 for _ in range(3)]
+```
