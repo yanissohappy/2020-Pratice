@@ -39,4 +39,4 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 * 方法就是利用數學的公式，找出 row 數與該層個數的關係，並且利用反轉 list 以達成 O(k) 的 space
 * 如果該階層的個數是偶數，那就只要做一半就好，然後另一半用反轉的
 * 如果該階層的個數是奇數，那就只要做到含正中間前的一半就好，然後另一半用反轉的即可
-* 效能似乎不錯
+* 效能不錯， faster than 98.85% of Python online submissions
