@@ -40,6 +40,3 @@ Given an array, rotate the array to the right by k steps, where k is non-negativ
 
 * main1.py
 * 看要從後面拔幾次到前面即可
-------
-
-* main2.py
