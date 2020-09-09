@@ -14,7 +14,7 @@ Count the number of prime numbers less than a non-negative number, n.
 * 解會是對的，但會 TLE
 ------
 
-* 我在網路上看到這張圖片，真的是超棒的解
+* 我在網路上看到這張圖片，真的是超棒的解  
 ![a](./algo.gif)
 * 這種方法稱為`Sieve_of_Eratosthenes` 
 * 題目要求是說小於 n 有幾個 prime，故 prime 的倍數一定都不是 prime，所以先篩掉此種倍數
