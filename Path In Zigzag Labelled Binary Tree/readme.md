@@ -36,18 +36,18 @@ In an infinite binary tree where every node has two children, the nodes are labe
 * 但是效能不好，因為這是 brute force
 -----
 
-* 於是我看了討論區一個很聰明的方法，是利用 bit pattern 的思維做的
+* 於是我看了討論區一個很聰明的方法，是利用 bit pattern 的思維做的，方法就是要求其 parent node 就保留 MSB 其餘 bit toggle，然後再 shift right 一位，不斷做直到 1 為止  
 * [點我](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/discuss/323848/Golang-O(log-n)-with-detail-explanation)  
-```
+
 We first consider the normal case.
 
 Obviously for a specific number, we can easily find the path from root to the node labeled with the number.
 
 For example, 111 -> 11 -> 1, 101 -> 10 -> 1, 110 -> 11 -> 1. Just shift the number one bit to the right and we can get the parent node of the number until we meet the root node labeled with 1.
-image
+![d](https://assets.leetcode.com/users/kerojin/image_1561907141.png)
 
 Now we consider the zigzag case.
-image
+![b](https://assets.leetcode.com/users/kerojin/image_1561907407.png)
 Compared to the normal case, it needs to convert the node to the symmetric node on the same level and get the parent node
 
 For example, 100 (--symmetric-> 111) -> 11 (--symmetric-> 10) -> 1, 101 (--symmetric-> 110) -> 11 (--symmetric->10) -> 1
@@ -68,7 +68,7 @@ so the path is 1->3->4->14
 2(10) --> 3(11) -> 1
 
 so the path is 1->2->6->10->26
-```
+
 
 ```python
 func pathInZigZagTree(label int) []int {
