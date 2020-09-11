@@ -70,7 +70,7 @@ In an infinite binary tree where every node has two children, the nodes are labe
 * so the path is 1->2->6->10->26
 
 
-```python
+```golang
 func pathInZigZagTree(label int) []int {
 	ans := []int{label}
 	for label > 1 {
