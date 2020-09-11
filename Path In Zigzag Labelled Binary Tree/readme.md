@@ -43,10 +43,10 @@ In an infinite binary tree where every node has two children, the nodes are labe
 
 * Obviously for a specific number, we can easily find the path from root to the node labeled with the number.
 
-* For example, 111 -> 11 -> 1, 101 -> 10 -> 1, 110 -> 11 -> 1. Just shift the number one bit to the right and we can get the parent node of the number until we meet the root node labeled with 1.
+* For example, 111 -> 11 -> 1, 101 -> 10 -> 1, 110 -> 11 -> 1. Just shift the number one bit to the right and we can get the parent node of the number until we meet the root node labeled with 1.  
 ![d](https://assets.leetcode.com/users/kerojin/image_1561907141.png)
 
-* Now we consider the zigzag case.
+* Now we consider the zigzag case.  
 ![b](https://assets.leetcode.com/users/kerojin/image_1561907407.png)
 * Compared to the normal case, it needs to convert the node to the symmetric node on the same level and get the parent node
 
