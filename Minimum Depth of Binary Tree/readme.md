@@ -8,11 +8,11 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 	Given binary tree [3,9,20,null,null,15,7],
 
-		3
-	   / \
-	  9  20
-		/  \
-	   15   7
+		    3
+		   / \
+		  9  20
+		    /  \
+		   15   7	
 
 ## [原題目連結點我](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
