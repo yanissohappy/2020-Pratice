@@ -10,9 +10,9 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 		  0
 		 / \
-	   -3   9
-	   /   /
-	 -10  5
+	       -3   9
+	      /   /
+	    -10  5
 
 ## [原題目連結點我](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
