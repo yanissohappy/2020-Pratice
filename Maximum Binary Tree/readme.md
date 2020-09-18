@@ -13,7 +13,7 @@ Given an integer array with no duplicates. A maximum tree building on this array
 
 		  6
 		/   \
-	   3     5
+	       3     5
 		\    / 
 		 2  0   
 		   \
