@@ -39,3 +39,8 @@ Suppose you have a random list of people standing in a queue. Each person is des
 	[[5,0],[7,0],[5,2],[6,1],[7,1]] (insert [5,2] at index 2)
 	[[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]] (insert [4,4] at index 4)
 ```
+
+----
+
+* main1.py
+* 我用自己的函式對 index 1 的元素 sort 成功了! 確實要額外再用一個 list 存，然後再 assign 回去
