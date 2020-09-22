@@ -35,7 +35,7 @@ Given an integer (signed 32 bits), write a function to check whether it is a pow
 ```
 -----
 
-* 我看到討論區有一個很聰明的做法:
+* 我看到討論區有一個[很聰明的做法](https://leetcode.com/problems/power-of-four/discuss/80461/Python-one-line-solution-with-explanations):
 ```python
 	def isPowerOfFour(self, num):
 			return num != 0 and num & (num-1) == 0 and num & 1431655765 == num
