@@ -6,9 +6,9 @@ Given two non-empty binary trees s and t, check whether tree t has exactly the s
 
 		 3
 		/ \
-	   4   5
-	  / \
-	 1   2
+	       4   5
+	      / \
+	     1   2
 	Given tree t:
 	   4 
 	  / \
@@ -22,11 +22,11 @@ Given two non-empty binary trees s and t, check whether tree t has exactly the s
 
 		 3
 		/ \
-	   4   5
-	  / \
-	 1   2
+	       4   5
+	      / \
+	     1   2
 		/
-	   0
+	       0
 	Given tree t:
 	   4
 	  / \
