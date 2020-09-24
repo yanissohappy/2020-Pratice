@@ -46,7 +46,8 @@ class Solution(object):
 	def countSegments(self, s):
 		_list = s.strip(" ").split(" ")
 		count = 0
-		for ss in _list: # 因為如果測資的字串有"a     b"這種情形的話，用 split 會在新的 list 產生太多空字串，所以最後要重新計數一次
+		for ss in _list: 
+		# 因為如果測資的字串有"a     b"這種情形的話，用 split 會在新的 list 產生太多空字串，所以最後要重新計數一次
 			if ss: count += 1               
 		return count
 ```
