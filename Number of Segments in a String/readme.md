@@ -42,13 +42,13 @@ A segment is defined to be a contiguous sequence of non-space characters.
 
 * 還有另一個方法，直接使用 API，但是 main.py 我主要是要用自己的想法完成。
 ```python
-	class Solution(object):
-		def countSegments(self, s):
-			_list = s.strip(" ").split(" ")
-			count = 0
-			for ss in _list: # 因為如果測資的字串有"a     b"這種情形的話，用 split 會在新的 list 產生太多空字串，所以最後要重新計數一次
-				if ss: count += 1               
-			return count
+class Solution(object):
+	def countSegments(self, s):
+		_list = s.strip(" ").split(" ")
+		count = 0
+		for ss in _list: # 因為如果測資的字串有"a     b"這種情形的話，用 split 會在新的 list 產生太多空字串，所以最後要重新計數一次
+			if ss: count += 1               
+		return count
 ```
 
 -----
