@@ -15,7 +15,7 @@ A shift on A consists of taking string A and moving the leftmost character to th
 ## Note:
 * A and B will have length at most 100.
 
-## [原題目連結點我](https://leetcode.com/problems/rotate-string/submissions/)
+## [原題目連結點我](https://leetcode.com/problems/rotate-string)
 
 ## 我的心得:
 * main.py
